@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:4002";
+const baseUrl = process.env.REACT_APP_BASE_URL
 // const baseUrl = "https://gugel-pixel-store.herokuapp.com";
 
 const setImages = (payload) => {

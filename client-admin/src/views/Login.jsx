@@ -5,7 +5,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import { preload } from "../store/actions/preloadAction";
 // const baseUrl = "https://gugel-pixel-store.herokuapp.com";
-const baseUrl = "http://localhost:4002";
+const baseUrl = process.env.REACT_APP_BASE_URL
 
 export default function Login() {
   const navigate = useNavigate();

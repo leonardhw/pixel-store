@@ -1,36 +1,32 @@
-import React from "react";
 import { useEffect } from "react";
 import TableRow from "../components/TableRow";
+import { fetchCategory } from "../store/actions/categoryAction";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchProduct } from "../store/actions/productAction";
 import { useNavigate } from "react-router-dom";
-import { fetchImage } from "../store/actions/imageAction";
 import Swal from "sweetalert2";
-import { preload } from "../store/actions/preloadAction";
 // const baseUrl = "https://gugel-pixel-store.herokuapp.com";
-const baseUrl = "http://localhost:4002";
+const baseUrl = process.env.REACT_APP_BASE_URL
 
-export default function Product() {
+export default function Category() {
   const navigate = useNavigate();
 
   // Redux state
+  const { categories } = useSelector((state) => state.category);
   const { isLoading } = useSelector((state) => state.preloader);
-  const { products } = useSelector((state) => state.product);
   const dispatch = useDispatch();
+
+  // Fetch
+  useEffect(() => {
+    dispatch(fetchCategory());
+  }, []);
 
   // Button handler
   const handleNavigate = (page) => navigate(page);
 
-  // Fetch
-  useEffect(() => {
-    dispatch(fetchImage());
-    dispatch(fetchProduct());
-  }, []);
-
   // Delete handler
   const handleDelete = async (id) => {
     Swal.fire({
-      title: "Do you want to delete this Product?",
+      title: "Do you want to delete this Category?",
       text: "You won't be able to revert this!",
       icon: "warning",
       showCancelButton: true,
@@ -40,17 +36,15 @@ export default function Product() {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const rawResponse = await fetch(`${baseUrl}/products/${id}`, {
+          const rawResponse = await fetch(`${baseUrl}/categories/${id}`, {
             method: "delete",
             headers: { access_token: localStorage.getItem("access_token") },
           });
-          const response = await rawResponse.json();
           if (!rawResponse.ok) {
-            throw new Error(response.msg);
+            throw { msg: "Error di delete category" };
           }
 
-          dispatch(fetchProduct());
-          dispatch(preload(true));
+          dispatch(fetchCategory());
         } catch (error) {
           Swal.fire({
             icon: "error",
@@ -58,13 +52,11 @@ export default function Product() {
             showConfirmButton: false,
             timer: 1500,
           });
-        } finally {
-          dispatch(preload(false));
         }
         Swal.fire({
           icon: "success",
           title: `Deleted!`,
-          text: "Your selected product has been deleted.",
+          text: "Your selected category has been deleted.",
           showConfirmButton: false,
           timer: 1500,
         });
@@ -74,14 +66,14 @@ export default function Product() {
 
   return (
     <>
-      {/* Products */}
+      {/* Categories */}
       <section className="container mt-5">
         <div className="d-flex justify-content-between mb-4">
           <div>
-            <p className="h1 text-uppercase fw-bold">Product List</p>
+            <p className="h1 text-uppercase fw-bold">Category List</p>
           </div>
           <div>
-            <button onClick={() => handleNavigate("products/add")} className="rounded-0 btn btn-dark btn-lg">
+            <button onClick={() => handleNavigate("add")} className="rounded-0 btn btn-dark btn-lg">
               +
             </button>
           </div>
@@ -92,23 +84,15 @@ export default function Product() {
           <thead>
             <tr>
               <th scope="col">No</th>
-              <th scope="col" style={{ width: "13%" }}>
-                Name
-              </th>
-              <th scope="col">Category</th>
-              <th scope="col">Price</th>
-              <th scope="col">Created By</th>
-              <th scope="col">Main Image</th>
-              {/* <th scope="col">Specs</th> */}
-              <th scope="col">Images</th>
-              <th scope="col" style={{ width: "8.5%" }}>
-                Action
-              </th>
+              <th scope="col">Name</th>
+              <th scope="col">Created At</th>
+              <th scope="col">Updated At</th>
+              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>
-            {products.map((product, index) => {
-              return <TableRow key={product.id} index={index} product={product} table={"product"} isLoading={isLoading} handleDelete={handleDelete} />;
+            {categories.map((category, index) => {
+              return <TableRow key={category.id} index={index} category={category} table={"category"} isLoading={isLoading} handleDelete={handleDelete} />;
             })}
           </tbody>
         </table>

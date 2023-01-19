@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { preload } from "../store/actions/preloadAction";
-const baseUrl = "http://localhost:4002";
+const baseUrl = process.env.REACT_APP_BASE_URL
 // const baseUrl = "https://gugel-pixel-store.herokuapp.com";
 
 export default function RegisterAdmin() {
