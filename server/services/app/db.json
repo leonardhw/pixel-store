@@ -1,0 +1,161 @@
+{
+  "products": [
+    {
+      "name": "Pixel 7 Pro",
+      "slug": "pixel_7_pro",
+      "description": "The all-pro Google phone.",
+      "price": 899,
+      "stock": 100,
+      "mainImg": "https://lh3.googleusercontent.com/lNy_tmKZdLhrx28jsS8HeOKFdpFX53kE97VMSEtZwEwrtShY1C3Gfc-Cer2U6tv2gozQYZsEltlF0MRaN8kEKcnLCgkOCy-U23A=s0",
+      "categoryId": 2,
+      "userId": 1,
+      "id": 1,
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    },
+    {
+      "id": 2,
+      "name": "Pixel 7",
+      "slug": "pixel_7",
+      "description": "Simply powerful. Super helpful.",
+      "price": 599,
+      "stock": 200,
+      "mainImg": "https://lh3.googleusercontent.com/zTUwNrMXQA0qkGDy8XISyJ5eED2sqbRfHjEe86jvGuGT-2BnU8rSt6qfn2HEx8-3KgVHz5l7XrZ1CYUfylCyC5mJJUjPboGUIVmc=s0",
+      "categoryId": 1,
+      "userId": 1,
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    },
+    {
+      "id": 3,
+      "name": "Google Pixel Watch",
+      "slug": "google_pixel_watch",
+      "description": "The all-pro Google phone.",
+      "price": 349,
+      "stock": 300,
+      "mainImg": "https://lh3.googleusercontent.com/zTUwNrMXQA0qkGDy8XISyJ5eED2sqbRfHjEe86jvGuGT-2BnU8rSt6qfn2HEx8-3KgVHz5l7XrZ1CYUfylCyC5mJJUjPboGUIVmc=s0",
+      "categoryId": 2,
+      "userId": 1,
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "phones",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    },
+    {
+      "id": 2,
+      "name": "watches",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "productId": 1,
+      "imgUrl": "https://lh3.googleusercontent.com/5fFj4Ta6TmwGOGjbfRPWGVAA8LtKN-ovlQP7N9m33G0pq6Zu8ynP6Lze4QMk-YI4n7AeKG9UGMsCj7rw-OgVN8VQSU4Jj2JeObQ=s1400-w1400-e365-rp",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    },
+    {
+      "id": 2,
+      "productId": 1,
+      "imgUrl": "https://lh3.googleusercontent.com/9oR3FD03rs5mf5stlHARnqc8av940NVQ9TV0kdS3UxL1mNAdwWMJQw26SZD3_nCN4WMAGZGe95okIFhqPmwv9kRchDmQB6fc1jE=s0",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    },
+    {
+      "id": 3,
+      "productId": 1,
+      "imgUrl": "https://lh3.googleusercontent.com/lNy_tmKZdLhrx28jsS8HeOKFdpFX53kE97VMSEtZwEwrtShY1C3Gfc-Cer2U6tv2gozQYZsEltlF0MRaN8kEKcnLCgkOCy-U23A=s0",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    },
+    {
+      "id": 4,
+      "productId": 2,
+      "imgUrl": "https://lh3.googleusercontent.com/8XsOhYb3FF1wHrjn5vYr4kktyKpxyH4MnBIFai0_Ulesy7zA-30f5YUFH2cotlDKQcMWBiEQgFFFZmAAYXAadHQdnlmCUsWWRg=s1400-w1400-e365-rp",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    },
+    {
+      "id": 5,
+      "productId": 2,
+      "imgUrl": "https://lh3.googleusercontent.com/c5JwVTRaocfSHEHp3-gjuEiLENXhHOaW9JvxMPs99woI2GFiBgB76fIAsnUPPRuNmpk2AAAP9Qs_8K7i3XlQyFGdYPYu-LAduceQ=s1400-w1400-e365-rp",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    },
+    {
+      "id": 6,
+      "productId": 2,
+      "imgUrl": "https://lh3.googleusercontent.com/zTUwNrMXQA0qkGDy8XISyJ5eED2sqbRfHjEe86jvGuGT-2BnU8rSt6qfn2HEx8-3KgVHz5l7XrZ1CYUfylCyC5mJJUjPboGUIVmc=s0",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    },
+    {
+      "id": 7,
+      "productId": 3,
+      "imgUrl": "https://lh3.googleusercontent.com/zTUwNrMXQA0qkGDy8XISyJ5eED2sqbRfHjEe86jvGuGT-2BnU8rSt6qfn2HEx8-3KgVHz5l7XrZ1CYUfylCyC5mJJUjPboGUIVmc=s0",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    }
+  ],
+  "specs": [
+    {
+      "id": 1,
+      "productId": 1,
+      "colors": ["Hazel", "Snow", "Obsidian"],
+      "color0": "https://lh3.googleusercontent.com/2QKYQg6WuyEbx0Kd83N8-_lhs0Vk-GYQWCqsQjtuGejiimGFRTp-FEc9tDfMer_xoj7FaOMuAE7pg0Uj-rpWS9A2RpZiCQpZSXi3=rw-e365-w550",
+      "color1": "https://lh3.googleusercontent.com/hODCzG6hUGm2EbaKzYy_wXXZEzufZvQqR3zT1RizQ8KLYMU--m83nbXvli1EkV6TmDayZt3m1hODrs5AecWqcgXtiyzNQIXmRRLa=rw-e365-w550",
+      "color2": "https://lh3.googleusercontent.com/NZF145eFS69-r7T0RT8CwsCkUiw3xG9EXfwWaDIfn93xvvJTdQOf4sp3Bve4UZ77323NhrZc9_q3ESX_2mQGZQEgZIN6GWJ8RHRM=rw-e365-w550",
+      "Display": "Full-screen 6.7-inch (170 mm)1 display \n 19.5:9 aspect ratio \n QHD+ (1440 x 3120) LTPO OLED at 512 PPI \n Smooth Display (up to 120 Hz2) \n Corning® Gorilla® Glass Victus™ cover glass \n Always-on display with At a Glance and Now Playing \n Up to 1000 nits (HDR) and up to 1500 nits (peak brightness) \n >1,000,000:1 contrast ratio \n HDR support \n Full 24-bit depth for 16 million colors",
+      "Dimension and Weight": "6.4 height x 3.0 width x 0.3 depth (inches) \n 162.9 height x 76.6 width x 8.9 depth (mm) \n 212 g \n 7.5 oz",
+      "Memory and Storage": "12 GB LPDDR5 RAM \n 128 GB / 256 GB / 512 GB UFS 3.1 storage",
+      "Processor": "Google Tensor G2 \n Titan M2 security coprocessor",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "colors": ["Lemongrass", "Snow", "Obsidian"],
+      "color0": "https://lh3.googleusercontent.com/xbP10Y4IcIZhACiMQC_70U-NaUnDPTh7Bk3br6NlbHrVCb3dx9eCqT2xj8KKugI7CFpyoOG2HUP6Fq1GFRTbqt4YXLso2OmAcPA=rw-e365-w300",
+      "color1": "https://lh3.googleusercontent.com/bsqX27_UglCXL2Ty2YkWPKwN4f8oPmxj6DUsiCx-jJWMtmnvs2uPQwY7gJbcj-X__WxZGXtqF85a0o5fBDFNYoEnbBHhfRSbLg=rw-e365-w300",
+      "color2": "https://lh3.googleusercontent.com/UoJ-NusZ5fl3F2l0TcQgP928uvMObaNPnA7d8DB3X3-lJ_54J_lNSDkZEku7tjBgoOf8Ch0dbstS1ssHLg5tge8QNBd6bW9cNQ=rw-e365-w300",
+      "Display": "Full-screen 6.3-inch (160.5 mm)1 display \n 20:9 aspect ratio \n FHD+ (1080 x 2400) OLED at 416 PPI \n Smooth Display (up to 90 Hz) \n Corning® Gorilla® Glass Victus™ cover glass \n Always-on display with At a Glance and Now Playing \n Up to 1000 nits (HDR) and up to 1400 nits (Peak Brightness) \n >1,000,000:1 contrast ratio \n HDR support \n Full 24-bit depth for 16 million colors",
+      "Dimension and Weight": "6.1 height x 2.9 width x 0.3 depth (inches) \n 155.6 height x 73.2 width x 8.7 depth (mm) \n 197 g \n 6.9 oz",
+      "Memory and Storage": "8 GB LPDDR5 RAM \n 128 GB / 256 GB UFS 3.1 storage",
+      "Processor": "Google Tensor G2 \n Titan M2 security coprocessor",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "colors": ["Champagne Gold", " Matte Black", "Polished Silver"],
+      "color0": "https://lh3.googleusercontent.com/8NpVmWUKG5_t5Jadt2v8gMUpiOOTeE7Sb67_qYyy__OjhUXeRQfm7DAYhAZu4S8T26rc2HOwIx_3Y--a3wOzGpSq0-n7QYxu3Nhy=rw-e365-w300",
+      "color1": "https://lh3.googleusercontent.com/kL6SyPqbDZ2lObdwOcN5tkUpIPH5ScV33sUnTjHYTQvK5EDz-SYIe2BPAThs4vMeuUWt1VyvhYXGhMrKxzFneGHdq_ekpwnH_bY=rw-e365-w300",
+      "color2": "https://lh3.googleusercontent.com/b0A2qlTYTeQQk2DN3Iv67Rfp3cRGu_AfHRA8IPP1T-9DWyW_rLnIEsnMel5mMAqAH_NBsBHAdVlsxY-Sh0QSi23-cJsnw-AFXg=rw-e365-w300",
+      "Display": "Custom 3D Corning® Gorilla® Glass 5",
+      "Dimension and Weight": "Diameter: 41 mm \n Height: 12.3 mm \n 36 g (without band)",
+      "Memory and Storage": "32 GB eMMC flash \n 2 GB SDRAM",
+      "Processor": "Exynos 9110 SoC \n Cortex M33 co-processor",
+      "createdAt": "2022-11-14",
+      "updatedAt": "2022-11-14"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "bopak@mail.com",
+      "role": "admin",
+      "phoneNumber": "0812",
+      "address": "Jl. Bopskuy"
+    }
+  ]
+}
