@@ -1,9 +1,9 @@
 const axios = require("axios");
 const redis = require("../configs/redis");
-// const appUrl = "http://localhost:4002/pub";
-// const usersUrl = "http://localhost:4001";
-const appUrl = "https://p3-challenge-2-production-5224.up.railway.app/pub";
-const usersUrl = "https://p3-challenge-2-production-086f.up.railway.app";
+const appUrl = "http://localhost:4002/pub";
+const usersUrl = "http://localhost:4001";
+// const appUrl = "https://p3-challenge-2-production-5224.up.railway.app/pub";
+// const usersUrl = "https://p3-challenge-2-production-086f.up.railway.app";
 
 const typeDefs = `#graphql
   type Product {
@@ -24,7 +24,7 @@ const typeDefs = `#graphql
   input ProductInput {
     # Bisa untuk validasi di sini pakai ! di akhir dataTypes
     name: String!
-    # slug: String
+    slug: String
     description: String!
     price: Int!
     stock: Int!

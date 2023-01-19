@@ -1,9 +1,10 @@
 const axios = require("axios");
-// const usersUrl = "http://localhost:4001";
-const usersUrl = "https://p3-challenge-2-production-086f.up.railway.app";
+const usersUrl = "http://localhost:4001";
+// const usersUrl = "https://p3-challenge-2-production-086f.up.railway.app";
 
 const typeDefs = `#graphql
   type User {
+    _id: ID
     username: String
     email: String
     password: String

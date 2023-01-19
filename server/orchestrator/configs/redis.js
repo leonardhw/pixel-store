@@ -1,5 +1,4 @@
 const Redis = require("ioredis");
-const fs = require("fs");
 
 // ! Perbaikin ntar
 const redis = new Redis({
